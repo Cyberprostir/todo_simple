@@ -1,10 +1,14 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:todo_simple/constants/colors.dart';
+import '../constants/colors.dart';
+import '../widgets/todo_item.dart';
+import '../model/todo.dart';
 
 class Home extends StatelessWidget {
-  const Home({Key? key}) : super(key: key);
+  Home({Key? key}) : super(key: key);
+
+  final toDoList = ToDo.toDoList();
 
   @override
   Widget build(BuildContext context) {
@@ -19,12 +23,23 @@ class Home extends StatelessWidget {
         child: Column(
           children: [
             searchBox(),
-            ListView(
-              children: [
-                Container(
-                  margin: EdgeInsets.only(),
-                ),
-              ],
+            Expanded(
+              child: ListView(
+                children: [
+                  Container(
+                    margin: EdgeInsets.only(top: 50, bottom: 20),
+                    child: Text(
+                      'All ToDos',
+                      style: TextStyle(
+                          //color: tdBlack,
+                          fontSize: 30,
+                          fontWeight: FontWeight.w500),
+                    ),
+                  ),
+                  for (ToDo todo in toDoList) 
+                  ToDoItem(todo: todo),
+                ],
+              ),
             )
           ],
         ),
