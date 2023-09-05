@@ -1,0 +1,46 @@
+class ToDo {
+  String? id;
+  String? todoText;
+  bool? isDone;
+
+  ToDo({
+    required this.id,
+    required this.todoText,
+    this.isDone = false,
+  });
+
+  static List<ToDo> toDoList () {
+    return [
+      ToDo(
+        id: '01',
+        todoText: 'Morning Exercises',
+        isDone: false,
+      ),
+      ToDo(
+        id: '02',
+        todoText: 'Buy eggs',
+        isDone: false,
+      ),
+      ToDo(
+        id: '03',
+        todoText: 'Buy bread',
+        isDone: false,
+      ),
+      ToDo(
+        id: '04',
+        todoText: 'Check Emails',
+        isDone: false,
+      ),
+      ToDo(
+        id: '05',
+        todoText: 'Work on mobile apps 2 hours',
+        isDone: false,
+      ),
+      ToDo(
+        id: '06',
+        todoText: 'Dinner with family',
+        isDone: false,
+      ),
+    ];
+  }
+}
