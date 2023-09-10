@@ -14,12 +14,12 @@ class ToDo {
       ToDo(
         id: '01',
         todoText: 'Morning Exercises',
-        isDone: false,
+        isDone: true,
       ),
       ToDo(
         id: '02',
         todoText: 'Buy eggs',
-        isDone: false,
+        isDone: true,
       ),
       ToDo(
         id: '03',
