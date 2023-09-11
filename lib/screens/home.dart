@@ -36,8 +36,8 @@ class Home extends StatelessWidget {
                           fontWeight: FontWeight.w500),
                     ),
                   ),
-                  for (ToDo todoo in toDoList) 
-                  ToDoItem(todo: todoo),
+                  for (ToDo todo in toDoList) 
+                  ToDoItem(todo: todo),
                 ],
               ),
             )

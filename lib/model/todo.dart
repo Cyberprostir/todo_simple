@@ -24,17 +24,17 @@ class ToDo {
       ToDo(
         id: '03',
         todoText: 'Buy bread',
-        isDone: false,
+        //isDone: false,
       ),
       ToDo(
         id: '04',
         todoText: 'Check Emails',
-        isDone: false,
+        //isDone: false,
       ),
       ToDo(
         id: '05',
         todoText: 'Work on mobile apps 2 hours',
-        isDone: false,
+        //isDone: false,
       ),
       ToDo(
         id: '06',
